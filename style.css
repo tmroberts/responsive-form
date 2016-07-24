@@ -1,0 +1,142 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+Page styling
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+body {
+  background-color: #5BA3D6;
+  color: #FFFFFF;
+  font-family: sans-serif;
+}
+
+
+/* 
+Container formatting:
+    Setting labbels to ALL-Caps
+    Font just shy one 1em
+*/
+label {
+	font-size: .75em;
+	padding: 1%;
+	text-transform: uppercase;
+}
+
+textarea {
+	vertical-align: top;
+}
+
+/*   
+Found at:  https://css-tricks.com/almanac/selectors/p/placeholder/
+*/
+::-webkit-input-placeholder {
+	color: #2A6B9A;
+    font-style: italic;
+}
+
+/*
+3 columns styles with .container: set each to 33% of the parent
+*/
+.container {
+    float: left;
+	margin: 1% 0;
+	margin-left: 3%;
+    width: 30.333333%;
+}
+
+
+.dropDown {
+	background-color: #5CA4D6;
+	color: #FFF;
+	font-size: 1em;
+	margin: 1%;
+	margin-bottom: 8%;
+	width: 90%;
+}
+
+
+.inputText:focus {
+	outline: none;
+	border: solid 2px #3374A3;
+}
+
+.inputText {
+	background-color: #5CA4D6;
+	border: solid 2px #FFF;
+	color: #FFF;
+	display: block;
+	font-size: .9em;
+	margin: 1%;
+	margin-bottom: 8%;
+	padding: 2%;
+	width: 90%;
+}
+
+.textArea {
+    padding: 0 0 105px 0;
+}
+
+
+/*
+setting my 'break-point' at 640px ???
+*/
+
+@media screen and (max-width: 640px) {
+    
+	.container {
+		width: 100%;
+	}
+}
